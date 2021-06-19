@@ -1,26 +1,19 @@
-import { Usuario } from "./Usuario";
+import { ProductOwner } from "./ProductOwner";
+import { Desarrollador } from "./Desarrollador";
 
-export class Proyecto{
-    constructor(
-  
-      Id: number,
-      NombreProyecto: string,
-      DescripcionProyecto : string,
-      EstadoDelProyecto: string,
-      FechaInicio: Date,
-      FechaFin: Date,
-      FechaCreacion:Date,
-      IdProductOwner:number,
-      ProductOwner:Usuario, 
-      Estado:number,
-    ){}
-  }
+export class Proyecto {
+  constructor(
 
-
-
-
-    
-        
-        // public List<Desarrollador> DesarrolladoresResponsables { get; set; }
-        // public List<Usuario> usuariosInvolucrados { get; set; }
-        
+    Id: number,
+    NombreProyecto: string,
+    DescripcionProyecto: string,
+    EstadoDelProyecto: string,
+    FechaInicio: Date,
+    FechaFin: Date,
+    FechaCreacion: Date,
+    IdProductOwner: number,
+    ProductOwner: ProductOwner,
+    Estado: number,
+    Desarrollador: Desarrollador[]
+  ) { }
+}

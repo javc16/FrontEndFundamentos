@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Usuario } from 'src/app/Models/Usuario';
+import { ProductOwner } from 'src/app/Models/ProductOwner';
 
 @Component({
   selector: 'app-crear-proyectos',
@@ -8,12 +8,12 @@ import { Usuario } from 'src/app/Models/Usuario';
   styleUrls: ['./crear-proyectos.component.css']
 })
 export class CrearProyectosComponent implements OnInit {
-productOwners: Usuario[]=[];
+  productOwners: ProductOwner[] = [];
   constructor(private router: Router) { }
 
   ngOnInit(): void {
 
-    
+
   }
 
   cancel() {
