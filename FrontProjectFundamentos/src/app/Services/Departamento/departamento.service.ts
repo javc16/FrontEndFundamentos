@@ -1,26 +1,27 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Proyecto } from 'src/app/Models/Proyecto';
+import { Departamento } from 'src/app/Models/Departamento';
 
-const baseUrl = "https://localhost:44349/api/Proyecto";
+const baseUrl = "https://localhost:44349/api/Departamento";
 
 @Injectable({
   providedIn: 'root'
 })
-export class ProyectoService {
+export class DepartamentoService {
+
   constructor(private http: HttpClient) { }
 
-  getAll(): Observable<Proyecto[]> {
-    return this.http.get<Proyecto[]>(baseUrl);
+  getAll(): Observable<Departamento[]> {
+    return this.http.get<Departamento[]>(baseUrl);
   }
 
-  getById(id: any): Observable<Proyecto> {
+  getById(id: any): Observable<Departamento> {
     return this.http.get(`${baseUrl}/${id}`);
   }
 
-  create(proyecto: Proyecto) {
-    return this.http.post(baseUrl, proyecto);
+  create(departamento: Departamento) {
+    return this.http.post(baseUrl, departamento);
   }
 
   update(id: any, data: any): Observable<any> {
