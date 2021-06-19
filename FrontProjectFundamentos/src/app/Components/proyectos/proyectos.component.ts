@@ -10,22 +10,22 @@ import { ProyectoService } from 'src/app/Services/Proyecto/proyecto.service';
 })
 export class ProyectosComponent implements OnInit {
   Proyectos: Proyecto[] = [];
-  displayedColumns: string[] = ['id','nombreProyecto','descripcionProyecto','estadoDelProyecto','fechaInicio','fechaFin','productOwner','action'];
+  displayedColumns: string[] = ['id', 'nombreProyecto', 'descripcionProyecto', 'estadoDelProyecto', 'fechaInicio', 'fechaFin', 'productOwner', 'action'];
 
-  constructor(private _proyectoService:ProyectoService,private router: Router) {}
+  constructor(private _proyectoService: ProyectoService, private router: Router) { }
 
   ngOnInit(): void {
-    this._proyectoService.getData().subscribe((data:any[])=>{
-      this.Proyectos=data;
+    this._proyectoService.getAll().subscribe((data: any[]) => {
+      this.Proyectos = data;
       console.log(this.Proyectos);
     })
   }
 
-  create(){
+  create() {
     this.router.navigate(['crearproyecto']);
   }
 
-  
+
 }
 
 

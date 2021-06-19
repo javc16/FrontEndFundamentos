@@ -1,1 +1,89 @@
-<p>tickets works!</p>
+<br>
+<br>
+<button mat-raised-button color="primary" (click)="create()">Create</button>
+<br>
+<br>
+
+<table mat-table [dataSource]="Tickets" class="mat-elevation-z8">
+    <!-- Position Column -->
+    <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef> No. </th>
+        <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="nombre">
+        <th mat-header-cell *matHeaderCellDef> Nombre</th>
+        <td mat-cell *matCellDef="let element"> {{element.nombre}} </td>
+    </ng-container>
+
+
+    <!-- <ng-container matColumnDef="descripcionIncidente">
+        <th mat-header-cell *matHeaderCellDef> Descripcion del Incidente </th>
+        <td mat-cell *matCellDef="let element"> {{element.descripcionIncidente}} </td>
+    </ng-container>
+    
+    <ng-container matColumnDef="descripcionSolucion">
+        <th mat-header-cell *matHeaderCellDef> Descripcion de la Solucion </th>
+        <td mat-cell *matCellDef="let element"> {{element.descripcionSolucion}} </td>
+    </ng-container> -->
+    <ng-container matColumnDef="estado">
+        <th mat-header-cell *matHeaderCellDef> Estado </th>
+        <td mat-cell *matCellDef="let element"> {{element.estado}} </td>
+    </ng-container>
+    <!-- <ng-container matColumnDef="diasTranscurridos">
+        <th mat-header-cell *matHeaderCellDef> Dias Transcurridos</th>
+        <td mat-cell *matCellDef="let element"> {{element.diasTranscurridos}} </td>
+    </ng-container>
+
+    
+    
+
+    
+    <ng-container matColumnDef="fechaInicio">
+        <th mat-header-cell *matHeaderCellDef> Fecha Inicial </th>
+        <td mat-cell *matCellDef="let element"> {{element.fechaInicial}} </td>
+    </ng-container>
+
+    
+    <ng-container matColumnDef="fechaFin">
+        <th mat-header-cell *matHeaderCellDef> Fecha Final </th>
+        <td mat-cell *matCellDef="let element"> {{element.fechaFinal}} </td>
+    </ng-container> -->
+
+
+    <!-- <ng-container matColumnDef="departamento">
+        <th mat-header-cell *matHeaderCellDef> Departamento </th>
+        <td mat-cell *matCellDef="let element"> {{element.departamento.nombre}} </td>
+    </ng-container> -->
+
+    <ng-container matColumnDef="categoria">
+        <th mat-header-cell *matHeaderCellDef> Categoria </th>
+        <td mat-cell *matCellDef="let element"> {{element.categoria.nombre}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="desarrollador">
+        <th mat-header-cell *matHeaderCellDef> Desarrollador </th>
+        <td mat-cell *matCellDef="let element"> {{element.desarrollador.nombre}} </td>
+    </ng-container>
+
+
+    <ng-container matColumnDef="action">
+        <tr>
+            <th mat-header-cell *matHeaderCellDef> Opciones </th>
+        </tr>
+        <tr>
+            <td mat-cell *matCellDef="let row" style="width:20%">
+                <button mat-icon-button color="primary" title="Edit Contact">
+                    <mat-icon>edit</mat-icon>
+                </button>
+                <button mat-icon-button color="primary" title="Delete Contact">
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </td>
+        <tr>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>

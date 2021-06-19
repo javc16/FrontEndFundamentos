@@ -14,6 +14,13 @@ import { TicketsComponent } from './Components/tickets/tickets.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { NavbarComponent } from './Components/navbar/navbar.component';
+import { ProductOwnersComponent } from './Components/product-owners/product-owners.component';
+import { ReportesComponent } from './Components/reportes/reportes.component';
+import { HomeComponent } from './Components/home/home.component';
+import { EstadoTicketComponent } from './Components/estado-ticket/estado-ticket.component';
+import { DesarrolladorComponent } from './Components/desarrollador/desarrollador.component';
+import { DepartamentoComponent } from './Components/departamento/departamento.component';
+import { CategoriaComponent } from './Components/categoria/categoria.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +30,14 @@ import { NavbarComponent } from './Components/navbar/navbar.component';
     EditarProyectosComponent,
     TicketsComponent,
     FooterComponent,
-    NavbarComponent
+    NavbarComponent,
+    ProductOwnersComponent,
+    ReportesComponent,
+    HomeComponent,
+    EstadoTicketComponent,
+    DesarrolladorComponent,
+    DepartamentoComponent,
+    CategoriaComponent
   ],
   imports: [
     MDBBootstrapModule.forRoot(),
