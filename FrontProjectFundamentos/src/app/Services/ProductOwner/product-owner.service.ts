@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { ProductOwner } from 'src/app/Models/ProductOwner';
+import { ProductOwner } from '../../Models/ProductOwner';
 
 const baseUrl = "https://localhost:44349/api/ProductOwner";
 
