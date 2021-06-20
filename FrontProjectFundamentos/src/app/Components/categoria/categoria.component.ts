@@ -20,7 +20,7 @@ export class CategoriaComponent implements OnInit {
   }
 
   create() {
-    this.router.navigate(['proyecto/crear-proyecto']);
+    this.router.navigate(['categoria/crear-categoria']);
   }
 
 }
