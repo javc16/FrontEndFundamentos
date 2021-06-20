@@ -22,4 +22,16 @@ export class DepartamentoComponent implements OnInit {
   create() {
     this.router.navigate(['departamento/crear-departamento']);
   }
+
+  
+  delete(departamento:Departamento) {  
+    this._departamentoService.delete(departamento.id,departamento)
+      .subscribe((res: any) => {     
+        
+        //this.toastr.success(res.mensaje, 'Tipo Usuario');
+      });     
+  }
+
+
+
 }

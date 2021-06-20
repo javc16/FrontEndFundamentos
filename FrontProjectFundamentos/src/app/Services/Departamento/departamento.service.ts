@@ -24,7 +24,8 @@ export class DepartamentoService {
     return this.http.post(baseUrl, departamento);
   }
 
-  update(id: any, data: any): Observable<any> {
+  delete(id: any, data: any): Observable<any> {
+    debugger;
     return this.http.put(`${baseUrl}/${id}`, data);
   }
 

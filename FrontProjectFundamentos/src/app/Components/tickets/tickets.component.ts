@@ -26,4 +26,6 @@ export class TicketsComponent implements OnInit {
     this.router.navigate(['tickets/crear-ticket']);
   }
 
+  
+
 }
