@@ -21,6 +21,8 @@ import { CrearDesarrolladorComponent } from './Components/desarrollador/crear-de
 import { EditarDesarrolladorComponent } from './Components/desarrollador/editar-desarrollador/editar-desarrollador.component';
 import { CrearTicketComponent } from './Components/tickets/crear-ticket/crear-ticket.component';
 import { EditarTicketComponent } from './Components/tickets/editar-ticket/editar-ticket.component';
+import { CrearEstadoTicketComponent } from './Components/estado-ticket/crear-estado-ticket/crear-estado-ticket.component';
+import { EditarEstadoTicketComponent } from './Components/estado-ticket/editar-estado-ticket/editar-estado-ticket.component';
 
 const routes: Routes = [
   {
@@ -42,6 +44,14 @@ const routes: Routes = [
   {
     path: 'estado-ticket',
     component: EstadoTicketComponent,
+  },
+  {
+    path: 'estado-ticket/crear-estado-ticket',
+    component: CrearEstadoTicketComponent,
+  },
+  {
+    path: 'estado-ticket/editar-estado-ticket/:id',
+    component: EditarEstadoTicketComponent,
   },
   {
     path: 'proyecto',
