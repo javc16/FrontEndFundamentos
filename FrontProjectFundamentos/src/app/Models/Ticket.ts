@@ -12,8 +12,8 @@ export class Ticket {
     FechaFin?: Date;
     FechaCreacion?: Date;
     DiasTranscurridos?: number;
-    Departamento?: Departamento;
-    Categoria?: Categoria;
-    Desarrollador?: Desarrollador;
-    EstadoTicket?: EstadoTicket
+    IdDepartamento?: number;
+    IdCategoria?: number;
+    IdDesarrollador?: number;
+    IdEstadoTicket?: number;
 }
