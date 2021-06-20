@@ -11,6 +11,16 @@ import { EstadoTicketComponent } from './Components/estado-ticket/estado-ticket.
 import { DesarrolladorComponent } from './Components/desarrollador/desarrollador.component';
 import { DepartamentoComponent } from './Components/departamento/departamento.component';
 import { CategoriaComponent } from './Components/categoria/categoria.component';
+import { CrearProductOwnersComponent } from './Components/product-owners/crear-product-owners/crear-product-owners.component';
+import { EditarProductOwnersComponent } from './Components/product-owners/editar-product-owners/editar-product-owners.component';
+import { CrearCategoriaComponent } from './Components/categoria/crear-categoria/crear-categoria.component';
+import { EditarCategoriaComponent } from './Components/categoria/editar-categoria/editar-categoria.component';
+import { CrearDepartamentoComponent } from './Components/departamento/crear-departamento/crear-departamento.component';
+import { EditarDepartamentoComponent } from './Components/departamento/editar-departamento/editar-departamento.component';
+import { CrearDesarrolladorComponent } from './Components/desarrollador/crear-desarrollador/crear-desarrollador.component';
+import { EditarDesarrolladorComponent } from './Components/desarrollador/editar-desarrollador/editar-desarrollador.component';
+import { CrearTicketComponent } from './Components/tickets/crear-ticket/crear-ticket.component';
+import { EditarTicketComponent } from './Components/tickets/editar-ticket/editar-ticket.component';
 
 const routes: Routes = [
   {
@@ -22,6 +32,14 @@ const routes: Routes = [
     component: TicketsComponent,
   },
   {
+    path: 'tickets/crear-ticket',
+    component: CrearTicketComponent,
+  },
+  {
+    path: 'tickets/editar-ticket/:id',
+    component: EditarTicketComponent,
+  },
+  {
     path: 'estado-ticket',
     component: EstadoTicketComponent,
   },
@@ -30,16 +48,24 @@ const routes: Routes = [
     component: ProyectosComponent,
   },
   {
-    path: 'crearproyecto',
+    path: 'proyecto/crear-proyecto',
     component: CrearProyectosComponent,
   },
   {
-    path: 'editarproyecto',
+    path: 'proyecto/editar-proyecto/:id',
     component: EditarProyectosComponent,
   },
   {
     path: 'product-owners',
     component: ProductOwnersComponent,
+  },
+  {
+    path: 'product-owners/crear-product-owners',
+    component: CrearProductOwnersComponent,
+  },
+  {
+    path: 'product-owners/editar-product-owners/:id',
+    component: EditarProductOwnersComponent,
   },
   {
     path: 'reportes',
@@ -50,15 +76,37 @@ const routes: Routes = [
     component: DesarrolladorComponent,
   },
   {
+    path: 'desarrollador/crear-desarrollador',
+    component: CrearDesarrolladorComponent,
+  },
+  {
+    path: 'desarrollador/editar-desarrollador/:id',
+    component: EditarDesarrolladorComponent,
+  },
+  {
     path: 'departamento',
     component: DepartamentoComponent,
   },
   {
+    path: 'departamento/crear-departamento',
+    component: CrearDepartamentoComponent,
+  },
+  {
+    path: 'departamento/editar-departamento/:id',
+    component: EditarDepartamentoComponent,
+  },
+  {
     path: 'categoria',
     component: CategoriaComponent,
+  },
+  {
+    path: 'categoria/crear-categoria',
+    component: CrearCategoriaComponent,
+  },
+  {
+    path: 'categoria/editar-categoria/:id',
+    component: EditarCategoriaComponent,
   }
-
-
 ];
 
 @NgModule({

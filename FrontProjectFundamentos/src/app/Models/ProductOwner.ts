@@ -1,15 +1,12 @@
 import { Proyecto } from "./Proyecto";
 
 export class ProductOwner {
-  constructor(
-
-    Id: number,
-    Nombre: string,
-    CodigoEmpleado: number,
-    Departamento: string,
-    FechaCreacion: Date,
-    Proyectos: Proyecto[]
-  ) { }
+  id?: number;
+  nombre?: string;
+  codigoEmpleado?: number;
+  departamento?: string;
+  fechaCreacion?: Date;
+  proyectos?: Proyecto[];
 }
 
 
