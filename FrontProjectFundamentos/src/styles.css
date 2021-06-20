@@ -12,7 +12,9 @@ body
 /* You can add global styles to this file, and also import other style files */
 
 
-
+div.image {
+  content:url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/bbe2f157-e46c-4b1a-9cb8-d73499b69a58/delu71r-b4ded2fe-b50a-42b0-8801-48423af7256b.png/v1/fill/w_1070,h_747,q_70,strp/fondohome_by_pachi3p_delu71r-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzcyIiwicGF0aCI6IlwvZlwvYmJlMmYxNTctZTQ2Yy00YjFhLTljYjgtZDczNDk5YjY5YTU4XC9kZWx1NzFyLWI0ZGVkMmZlLWI1MGEtNDJiMC04ODAxLTQ4NDIzYWY3MjU2Yi5wbmciLCJ3aWR0aCI6Ijw9MTEwNiJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.-jzB5LY247TPrxNY7s1TbNKNdTAM8_bdyv8DdfmIfSE);
+}
 
 table {
  

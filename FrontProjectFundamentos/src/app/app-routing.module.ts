@@ -26,7 +26,7 @@ import { EditarEstadoTicketComponent } from './Components/estado-ticket/editar-e
 
 const routes: Routes = [
   {
-    path: 'home',
+    path: '',
     component: HomeComponent,
   },
   {
