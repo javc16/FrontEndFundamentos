@@ -2,15 +2,15 @@ import { ProductOwner } from "./ProductOwner";
 import { Desarrollador } from "./Desarrollador";
 
 export class Proyecto {
-  Id?: number;
-  NombreProyecto?: string;
-  DescripcionProyecto?: string;
-  EstadoDelProyecto?: string;
-  FechaInicio?: Date;
-  FechaFin?: Date;
-  FechaCreacion?: Date;
-  IdProductOwner?: number;
-  ProductOwner?: ProductOwner;
-  Estado?: number;
-  DesarrolladoresResponsables?: Desarrollador[];
+  id?: number;
+  nombreProyecto?: string;
+  descripcionProyecto?: string;
+  estadoDelProyecto?: string;
+  fechaInicio?: Date;
+  fechaFin?: Date;
+  fechaCreacion?: Date;
+  idProductOwner?: number;
+  productOwner?: ProductOwner;
+  estado?: number;
+  desarrolladoresResponsables?: Desarrollador[];
 }

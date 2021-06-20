@@ -23,7 +23,7 @@ export class TicketsComponent implements OnInit {
   }
 
   create(): void {
-
+    this.router.navigate(['tickets/crear-ticket']);
   }
 
 }

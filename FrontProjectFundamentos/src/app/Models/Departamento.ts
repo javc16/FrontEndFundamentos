@@ -1,6 +1,6 @@
 export class Departamento {
-    Id?: number;
-    Nombre?: string;
-    Descripcion?: string;
-    Estado?: number;
+    id?: number;
+    nombre?: string;
+    descripcion?: string;
+    estado?: number;
 }

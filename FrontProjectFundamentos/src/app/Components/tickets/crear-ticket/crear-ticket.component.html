@@ -1,1 +1,69 @@
-<p>crear-ticket works!</p>
+<br>
+<br>
+<h1>Crear Nuevo Ticket</h1>
+<form name="myForm">
+    <div class="form-group">
+        <mat-label>Nombre del Ticket: </mat-label>
+        <tr></tr>
+        <input id="NombreTicket" name="NombreTicket" type="text" class="form-control"
+            [(ngModel)]="ticket.nombre">
+    </div>
+    <div class="form-group">
+        <mat-label>Descripcion del Incidente: </mat-label>
+        <tr></tr>
+        <input id="DescripcionProyecto" name="DescripcionProyecto" type="text" class="form-control"
+            [(ngModel)]="ticket.descripcionIncidente">
+    </div>
+    <div class="form-group">
+        <label for="singleSelect"> Seleccione el departamento: </label><br>
+        <select name="productOwner" width="8" class="form-control" id="allocation-algorithm"
+            [(ngModel)]="ticket.idDepartamento">
+            <option *ngFor="let departamento of departamentos" [value]="departamento.id">{{ departamento.nombre }}
+            </option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="singleSelect"> Seleccione la categoria: </label><br>
+        <select name="productOwner" width="8" class="form-control" id="allocation-algorithm"
+            [(ngModel)]="ticket.idCategoria">
+            <option *ngFor="let categoria of categorias" [value]="categoria.id">{{ categoria.nombre }}
+            </option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="singleSelect"> Seleccione el desarrollador: </label><br>
+        <select name="productOwner" width="8" class="form-control" id="allocation-algorithm"
+            [(ngModel)]="ticket.idDesarrollador">
+            <option *ngFor="let desarrollador of desarrolladores" [value]="desarrollador.id">{{ desarrollador.nombre }}
+            </option>
+        </select>
+    </div>
+    
+
+
+
+    <!-- <div class="form-group">
+        <label for="singleSelect"> Quien sera el desarrollador responsable: </label><br>
+        <select name="productOwners" width="8" class="form-control" id="allocation-algorithm">
+            <option *ngFor="let desarrollador of desarrolladores" [value]="desarrollador.Id">{{ desarrollador.Nombre }}
+            </option>
+        </select>
+    </div> -->
+</form>
+<br>
+<br>
+
+<mat-card-actions>
+
+
+    <button mat-raised-button color="warn" mattooltip="df" type="submit" (click)="cancel()" style="margin-right: 10px;">
+        <i class='fa fa-times fa-fw'></i> Cancel
+    </button>
+
+    <button mat-raised-button color="accent" class="marginButton" mattooltip="df" type="submit"
+        (click)="crear()">
+        <i class='fa fa-save fa-fw'></i> Save
+    </button>
+</mat-card-actions>

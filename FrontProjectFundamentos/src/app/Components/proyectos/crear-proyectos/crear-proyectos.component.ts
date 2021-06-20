@@ -26,7 +26,7 @@ export class CrearProyectosComponent implements OnInit {
     ) {
     this.proyecto = new Proyecto();
     this.selectedProductOwner = new ProductOwner();
-    this.proyecto.ProductOwner = new ProductOwner();
+    this.proyecto.productOwner = new ProductOwner();
 
   }
 
@@ -42,11 +42,11 @@ export class CrearProyectosComponent implements OnInit {
   }
 
   crearProyecto() {
-    this._productOwnerService.getById(this.proyecto.IdProductOwner).subscribe((data: any) => {
+    this._productOwnerService.getById(this.proyecto.idProductOwner).subscribe((data: any) => {
 
       if (data.mensaje == null) {
 
-        this.proyecto.ProductOwner = data.datos;
+        this.proyecto.productOwner = data.datos;
         this.selectedProductOwner = data.datos;
         debugger;
         if (this.proyecto) {

@@ -2,11 +2,11 @@ import { Proyecto } from "./Proyecto";
 
 export class Desarrollador {
 
-    Id?: number;
-    Nombre?: string;
-    CodigoEmpleado?: number;
-    FechaCreacion?: Date;
-    IdProyecto?: number;
-    Proyecto?: Proyecto;
+    id?: number;
+    nombre?: string;
+    codigoEmpleado?: number;
+    fechaCreacion?: Date;
+    idProyecto?: number;
+    proyecto?: Proyecto;
 
 }
