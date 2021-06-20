@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Departamento } from 'src/app/Models/Departamento';
 
-const baseUrl = "https://localhost:44349/api/Departamento";
+const baseUrl = "https://localhost:44349/api/Department";
 
 @Injectable({
   providedIn: 'root'
